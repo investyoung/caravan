@@ -8,4 +8,9 @@ router.post('/register', (req, res) => {
 
 // Add more routes as needed
 
+const usersController = require('../controllers/usersController');
+
+// User registration route
+router.post('/register', usersController.registerUser);
+
 module.exports = router;
